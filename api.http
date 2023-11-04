@@ -1,0 +1,64 @@
+Get http://localhost:4000/api/v1/user/
+
+
+################################
+POST http://localhost:4000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "email": "phamhuuthien1@gmail.com",
+    "password": "123456"
+}
+
+######
+
+POST http://localhost:4000/api/v1/auth/login
+Content-Type: application/json
+
+# {
+#     "email": "phamhuuthien@gmail.com",
+#     "password": "123456"
+# }
+
+{
+    "email": "phamhuuthien@gmail.com",
+    "password": "123456"
+}
+
+
+###
+get http://localhost:4000/api/v1/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJwaGFtaHV1dGhpZW5AZ21haWwuY29tIiwicm9sZV9jb2RlIjoiUjEiLCJpYXQiOjE2OTYxMzE2ODksImV4cCI6MTY5NjU2MzY4OX0.3abfAcHIOSd5XDiAeS2nQKk2wH1M69PkDtD7DCW0bcE
+
+
+
+###
+get http://localhost:4000/api/v1/insert/
+
+
+###
+get http://localhost:4000/api/v1/book/?order[]=price&order[]=DESC&limit=10&page=4&name=of
+
+
+###
+
+get http://localhost:4000/api/v1/book/?available=1
+
+
+###
+
+get http://localhost:4000/api/v1/book/?available[]=1&available[]=3&page=4
+
+
+###
+post http://localhost:4000/api/v1/book
+Content-Type: application/json
+
+{
+    "title" : "Book",
+    "image" : "link1",
+    "price" : 1232321,
+    "available" :13,
+    "category_code" : "book"
+}
+

@@ -1,0 +1,9 @@
+
+// cấu hình babel
+
+{
+    "presets": ["@babel/preset-env"],
+    // "plugins": [
+    //   ["@babel/plugin-transform-runtime"]
+    // ]
+  }
